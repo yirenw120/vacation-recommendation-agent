@@ -1,1 +1,1 @@
-# vacation-recommendation-engine
+# vacation-recommendation-agent
