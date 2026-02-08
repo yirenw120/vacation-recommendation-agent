@@ -1,7 +1,6 @@
 # vacation-recommendation-agent
 
-A machine-learning-driven vacation recommendation engine that predicts destination ratings and outputs personalized **Top-5** travel suggestions by combining user-level features (demographics, preferences, behavior) and destination-level attributes (climate zone, city type, average temperature, geo/environment). :contentReference[oaicite:1]{index=1}
-
+A machine-learning-driven vacation recommendation engine that predicts destination ratings and outputs personalized **Top-5** travel suggestions by combining user-level features (demographics, preferences, behavior) and destination-level attributes (climate zone, city type, average temperature, geo/environment).
 ## What this project does
 This system learns relationships between user profiles and destination desirability by expanding historical ratings into a training set of *(user, destination)* pairs and fitting multiple predictive models. :contentReference[oaicite:2]{index=2}
 
@@ -13,11 +12,11 @@ This system learns relationships between user profiles and destination desirabil
 - K-means clustering
 - LightGBM regression
 - XGBoost regression  
-These are combined using a **stacking meta-learner** (linear regression) trained on cross-validation predictions to produce a more stable final rating predictor than any single model. :contentReference[oaicite:3]{index=3}
+These are combined using a **stacking meta-learner** (linear regression) trained on cross-validation predictions to produce a more stable final rating predictor than any single model.
 
 ## Recommendation scenarios
-1) **No-user-info ranking:** returns Top-5 destinations based on aggregated historical ratings. :contentReference[oaicite:4]{index=4}  
-2) **Personalized Top-5:** predicts each destination’s rating using the stacked ensemble; optional filters can further refine results. :contentReference[oaicite:5]{index=5}
+1) **No-user-info ranking:** returns Top-5 destinations based on aggregated historical ratings.
+2) **Personalized Top-5:** predicts each destination’s rating using the stacked ensemble; optional filters can further refine results. 
 
 ## Data
 Two input datasets:
