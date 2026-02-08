@@ -2,7 +2,7 @@
 
 A machine-learning-driven vacation recommendation engine that predicts destination ratings and outputs personalized **Top-5** travel suggestions by combining user-level features (demographics, preferences, behavior) and destination-level attributes (climate zone, city type, average temperature, geo/environment).
 ## What this project does
-This system learns relationships between user profiles and destination desirability by expanding historical ratings into a training set of *(user, destination)* pairs and fitting multiple predictive models. :contentReference[oaicite:2]{index=2}
+This system learns relationships between user profiles and destination desirability by expanding historical ratings into a training set of *(user, destination)* pairs and fitting multiple predictive models. 
 
 **Models included**
 - K-Nearest Neighbors (KNN)
@@ -21,12 +21,12 @@ These are combined using a **stacking meta-learner** (linear regression) trained
 ## Data
 Two input datasets:
 - **User dataset**: individual characteristics + past trip ratings  
-  `users = read.csv('src/Vacation_UsersData.csv')` :contentReference[oaicite:6]{index=6}
+  `users = read.csv('src/Vacation_UsersData.csv')` 
 - **Destination dataset**: attributes for each location  
-  `dests = read.csv('src/Vacation_DestinationData.csv')` :contentReference[oaicite:7]{index=7}
-
-Examples of user features include age, budget, trip duration preference, current latitude/longitude, and categorical preferences (climate, travel style, companion, etc.). :contentReference[oaicite:8]{index=8}  
-Destination features include climate zone, city type, average temperature, latitude/longitude, etc. :contentReference[oaicite:9]{index=9}
+  `dests = read.csv('src/Vacation_DestinationData.csv')`
+  
+Examples of user features include age, budget, trip duration preference, current latitude/longitude, and categorical preferences (climate, travel style, companion, etc.). 
+Destination features include climate zone, city type, average temperature, latitude/longitude, etc.
 
 ## Requirements
 This project uses the following R packages (among others):
